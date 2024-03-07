@@ -13,7 +13,7 @@ export default function Home() {
         <div >
           <Image className="ml-16 w-[221px] h-[30px] relative z-20" src={logo} alt={""}></Image>
         </div>
-        <div className="flex items-center relative z-20 invisible lg:visible">
+        <div className="flex items-center relative z-20 hidden lg:block">
           <h3 className="poppins-semibold text-sm text-white mr-[42px]">Asistente inteligente</h3>
           <h3 className="poppins-semibold text-sm text-white mr-[42px]">Conocenos</h3>
           <h3 className="poppins-semibold text-sm text-white mr-[42px]">Beneficios</h3>
