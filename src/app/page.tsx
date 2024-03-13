@@ -148,8 +148,8 @@ export default function Home() {
         </section>
         <section className="flex flex-col w-screen items-center content-center z-20 mb-[2rem]">
           <div className="w-[90%]  flex flex-col md:flex-row space-between content-between items-center  my-[2rem]">
-            <Image className="flex-1 w-[90%]" src={secondImage}></Image>
-            <div className="flex-1 w-[90%]">
+            <Image className="flex-1 " src={secondImage}></Image>
+            <div className="flex-1 ">
               <h2
                 className="poppins-bold text-[35px] mb-[3rem]"
                 color="#02045C"
