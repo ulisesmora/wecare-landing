@@ -107,7 +107,7 @@ export default function Us() {
                   <Image
                     width={"80"}
                     height={"80"}
-                    src={"/assets/icon (6).png"}
+                    src={"/assets/med6.png"}
                     alt={""}
                   ></Image>
                 </div>
@@ -136,7 +136,7 @@ export default function Us() {
                   <Image
                     width={"80"}
                     height={"80"}
-                    src={"/assets/icon (2).png"}
+                    src={"/assets/med2.png"}
                     alt={""}
                   ></Image>
                 </div>
@@ -165,7 +165,7 @@ export default function Us() {
                   <Image
                     width={"80"}
                     height={"80"}
-                    src={"/assets/icon.png"}
+                    src={"/assets/med0.png"}
                     alt={""}
                   ></Image>
                 </div>

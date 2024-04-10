@@ -234,7 +234,7 @@ export default function Home() {
         <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
 
         <div >
-          <Image  width={'140'} height={'140'} src={'/assets/icon (1).png'} alt={""} ></Image>
+          <Image  width={'140'} height={'140'} src={'/assets/med1.png'} alt={""} ></Image>
           </div>
           <div>
           <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
@@ -253,7 +253,7 @@ export default function Home() {
         <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
 
         <div >
-          <Image  width={'140'} height={'140'} src={'/assets/icon (2).png'} alt={""} ></Image>
+          <Image  width={'140'} height={'140'} src={'/assets/med2.png'} alt={""} ></Image>
           </div>
           <div>
           <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
@@ -272,7 +272,7 @@ export default function Home() {
         <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
 
         <div >
-          <Image  width={'140'} height={'140'} src={'/assets/icon (3).png'} alt={""} ></Image>
+          <Image  width={'140'} height={'140'} src={'/assets/med3.png'} alt={""} ></Image>
           </div>
           <div>
           <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
@@ -291,7 +291,7 @@ export default function Home() {
         <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
 
         <div >
-          <Image  width={'140'} height={'140'} src={'/assets/icon (4).png'} alt={""} ></Image>
+          <Image  width={'140'} height={'140'} src={'/assets/med4.png'} alt={""} ></Image>
           </div>
           <div>
           <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
@@ -310,7 +310,7 @@ export default function Home() {
         <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
 
         <div >
-          <Image  width={'140'} height={'140'} src={'/assets/icon (5).png'} alt={""} ></Image>
+          <Image  width={'140'} height={'140'} src={'/assets/med5.png'} alt={""} ></Image>
           </div>
           <div>
           <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
