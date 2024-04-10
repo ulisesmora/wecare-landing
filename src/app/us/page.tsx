@@ -11,28 +11,31 @@ import { Button, Card, CardBody, Text, CardHeader } from "@chakra-ui/react";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendar } from "react-icons/io5";
 import { LiaStethoscopeSolid } from "react-icons/lia";
+import Link from 'next/link';
 
 export default function Us() {
   return (
     <main className="flex min-h-screen w-screen flex-col items-center justify-between">
       <header className="flex w-screen justify-between items-center flex-row mt-[50px] ">
         <div>
+        <Link href="/">
           <Image
             className="ml-16 w-[221px] h-[30px] relative z-20"
             src={logo}
             alt={""}
           ></Image>
+            </Link>
         </div>
         <div className="flex items-center flex-row  z-20 hidden lg:flex">
-          <h3 className="poppins-semibold text-sm text-white mr-[42px]">
+          <h3 className="poppins-semibold text-sm text-[#02045C] mr-[42px]">
             Asistente inteligente
           </h3>
-          <h3 className="poppins-semibold text-sm text-white mr-[42px]">
+          
+        <Link href="/us">
+          <h3 className="poppins-semibold text-sm text-[#02045C] underline mr-[42px]">
             Conocenos
           </h3>
-          <h3 className="poppins-semibold text-sm text-white mr-[42px]">
-            Beneficios
-          </h3>
+          </Link>
           <Button
             className="poppins-regular text-sm mr-[42px]"
             h={"50px"}
@@ -42,7 +45,10 @@ export default function Us() {
             bg={"#DBF3BF"}
             variant="solid"
           >
+
+        <Link href="/contact">
             Contactanos
+          </Link>
           </Button>
         </div>
         <Image
@@ -59,7 +65,7 @@ export default function Us() {
       <div className="flex flex-col  justify-center items-center content-center w-[90%] mt-[5rem]">
         <section className="flex flex-col relative w-screen items-center content-center z-20 mb-[2rem]">
           <Image
-            className="hidden md:block absolute top-[35rem] right-[-5rem] z-1 h-[90vh] rotate-180 md:h-auto  "
+            className="hidden md:block absolute top-[35rem] right-[-5rem] z-1 h-[90vh] rotate-180 md:h-auto  " style={{opacity: 0.3}}
             src={circleverde}
             alt={""}
           ></Image>
@@ -188,7 +194,7 @@ export default function Us() {
         </section>
         <section className="flex flex-col relative w-screen items-center content-center z-20 mb-[2rem]">
           <Image
-            className="hidden md:block absolute top-[-35rem] left-[-5rem] z-1 h-[90vh]  md:h-auto  "
+            className="hidden md:block absolute top-[-35rem] left-[-5rem] z-1 h-[90vh]  md:h-auto  " style={{opacity: 0.3}}
             src={circleverde}
             alt={""}
           ></Image>
@@ -279,7 +285,7 @@ export default function Us() {
 
         <section className="flex flex-col relative w-screen items-center content-center z-20 mb-[2rem]">
           <Image
-            className="hidden md:block absolute top-[35rem] left-[-5rem] z-1 h-[90vh]  md:h-auto  "
+            className="hidden md:block absolute top-[35rem] left-[-5rem] z-1 h-[90vh]  md:h-auto  " style={{opacity: 0.3}}
             src={circleverde}
             alt={""}
           ></Image>

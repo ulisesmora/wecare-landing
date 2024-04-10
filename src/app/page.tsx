@@ -8,6 +8,7 @@ import secondImage from "../../public/assets/Group 1026.png";
 import { Button, Card, CardBody, Text, CardHeader } from "@chakra-ui/react";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendar } from "react-icons/io5";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -21,14 +22,14 @@ export default function Home() {
           ></Image>
         </div>
         <div className="flex items-center flex-row  z-20 hidden lg:flex">
+          
           <h3 className="poppins-semibold text-sm text-white mr-[42px]">
             Asistente inteligente
           </h3>
           <h3 className="poppins-semibold text-sm text-white mr-[42px]">
+          <Link href="/us">
             Conocenos
-          </h3>
-          <h3 className="poppins-semibold text-sm text-white mr-[42px]">
-            Beneficios
+            </Link>
           </h3>
           <Button
             className="poppins-regular text-sm mr-[42px]"
@@ -39,7 +40,10 @@ export default function Home() {
             bg={"#DBF3BF"}
             variant="solid"
           >
-            Contactanos
+             <Link href="/contact">
+            
+             Contactanos
+            </Link>
           </Button>
         </div>
         <Image
@@ -72,11 +76,13 @@ export default function Home() {
             digitales inteligentes, ofreciendo una solución transparente y
             eficiente enfocada en sus necesidades de atención médica.
           </p>
+          <div className="relative w-[65%] z-10 ">
           <Image
-            className="w-[65%] mt-[5rem] z-20"
+            className=" mt-[5rem]"
             src={mainImage}
             alt={""}
           ></Image>
+          </div>
           <Button
             className="poppins-regular my-[42px] text-sm p-[1rem] "
             h="50px"
@@ -91,12 +97,12 @@ export default function Home() {
         </section>
         <section className="flex flex-col w-screen relative items-center content-center z-20 mb-[2rem]">
         <Image
-          className="hidden md:block absolute top-[-40rem] left-2 z-1 h-[90vh] md:h-auto "
+          className="hidden  md:block absolute top-[-40rem] z-1 left-2  h-[90vh] md:h-auto " style={{opacity: 0.3}}
           src={circleverde}
           alt={""}
         ></Image>
         <Image
-          className="hidden md:block absolute top-[-10rem] right-[-5rem] z-1 h-[90vh] rotate-180 md:h-auto  "
+          className="hidden md:block absolute top-[-10rem] right-[-5rem] z-1 h-[90vh] rotate-180 md:h-auto  " style={{opacity: 0.3}}
           src={circleverde}
           alt={""}
         ></Image>
@@ -159,7 +165,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col relative w-screen items-center content-center z-20 mb-[2rem]">
         <Image
-          className="hidden md:block absolute top-[35rem] right-[-5rem] z-1 h-[90vh] rotate-180 md:h-auto  "
+          className="hidden md:block absolute top-[35rem] right-[-5rem] z-1 h-[90vh] rotate-180 md:h-auto  " style={{opacity: 0.3}}
           src={circleverde}
           alt={""}
         ></Image>
@@ -213,7 +219,7 @@ export default function Home() {
                 <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
 
                 <div >
-                  <Image  width={'140'} height={'140'} src={'/assets/icon.png'} alt={""} ></Image>
+                  <Image  width={'140'} height={'140'} src={'/assets/med0.png'} alt={""} ></Image>
                   </div>
                   <div>
                   <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
