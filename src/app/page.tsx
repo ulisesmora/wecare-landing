@@ -1,10 +1,11 @@
 import Image from "next/image";
 import logo from "../../public/assets/Frame 8148.png";
 import circle from "../../public/assets/Circulo azul.png";
+import circleverde from "../../public/assets/CirculoVerde.png";
 import gradient from "../../public/assets/Ellipse 1406.png";
 import mainImage from "../../public/assets/32.png";
 import secondImage from "../../public/assets/Group 1026.png";
-import { Button } from "@chakra-ui/react";
+import { Button, Card, CardBody, Text, CardHeader } from "@chakra-ui/react";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendar } from "react-icons/io5";
 
@@ -53,7 +54,7 @@ export default function Home() {
         ></Image>
       </header>
       <div className="flex flex-col  justify-center items-center content-center w-[90%] mt-[5rem]">
-        <section className="flex flex-col items-center content-center z-20">
+        <section className="flex flex-col items-center content-center relative z-20">
           <h2
             className="poppins-bold text-[30px] md:text-[50px]  w-[60%] text-center break-normal "
             color="#02045C"
@@ -72,7 +73,7 @@ export default function Home() {
             eficiente enfocada en sus necesidades de atención médica.
           </p>
           <Image
-            className="w-[65%] mt-[5rem] "
+            className="w-[65%] mt-[5rem] z-20"
             src={mainImage}
             alt={""}
           ></Image>
@@ -88,9 +89,19 @@ export default function Home() {
             Agenda una demo
           </Button>
         </section>
-        <section className="flex flex-col w-screen items-center content-center z-20 mb-[2rem]">
+        <section className="flex flex-col w-screen relative items-center content-center z-20 mb-[2rem]">
+        <Image
+          className="hidden md:block absolute top-[-40rem] left-2 z-1 h-[90vh] md:h-auto "
+          src={circleverde}
+          alt={""}
+        ></Image>
+        <Image
+          className="hidden md:block absolute top-[-10rem] right-[-5rem] z-1 h-[90vh] rotate-180 md:h-auto  "
+          src={circleverde}
+          alt={""}
+        ></Image>
           <div
-            className="w-[90%] rounded-lg shadow-xl flex flex-col md:flex-row space-between content-between items-center py-[2rem]"
+            className="w-[90%] z-10 rounded-lg shadow-xl flex flex-col md:flex-row space-between content-between items-center py-[2rem]"
             style={{ background: "#EEF1F2" }}
           >
             <div
@@ -146,7 +157,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col w-screen items-center content-center z-20 mb-[2rem]">
+        <section className="flex flex-col relative w-screen items-center content-center z-20 mb-[2rem]">
+        <Image
+          className="hidden md:block absolute top-[35rem] right-[-5rem] z-1 h-[90vh] rotate-180 md:h-auto  "
+          src={circleverde}
+          alt={""}
+        ></Image>
           <div className="w-[90%]  flex flex-col md:flex-row space-between content-between items-center  my-[2rem]">
             <Image className="flex-1 " src={secondImage} alt={""}></Image>
             <div className="flex-1 ">
@@ -179,21 +195,148 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col w-screen items-center content-center z-20 mb-[2rem]">
-        <div className="w-[90%]  flex flex-col  space-between content-between items-center  my-[2rem]">
+          <div className="w-[90%]  flex flex-col  space-between content-between items-center  my-[2rem]">
+            <h2 className="poppins-bold text-[35px] mb-[3rem]" color="#02045C">
+              La plataforma que necesitas
+            </h2>
+            <p
+              className="poppins-regular text-[18px] mb-[2rem]"
+              color="#02045C"
+            >
+              Nuestras soluciones ayudan a potencilizar y convertir la
+              excelencia clínica en mejores resultados para nuestros socios.
+            </p>
+
+            <div className="w-[95%] md:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-8 ">
+              <Card >
         
-          <h2
-                className="poppins-bold text-[35px] mb-[3rem]"
-                color="#02045C"
-              >
-                La plataforma que necesitas
-              </h2>
-              <p
-                className="poppins-regular text-[18px] mb-[2rem]"
-                color="#02045C"
-              >
-                Nuestras soluciones ayudan a potencilizar y convertir la excelencia clínica en mejores resultados para nuestros socios.
-              </p>
-             
+                <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
+
+                <div >
+                  <Image  width={'140'} height={'140'} src={'/assets/icon.png'} alt={""} ></Image>
+                  </div>
+                  <div>
+                  <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
+                    Asistente Inteligente
+                  </h1>
+
+                  <Text className="ml-[3rem]" >
+                  Asesora a tus pacientes sobre sus síntomas a través de un cuestionario en menos de 3 minutos.
+                  </Text>
+                  </div>
+                </CardBody>
+              </Card>
+
+        
+
+      <Card >
+        
+        <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
+
+        <div >
+          <Image  width={'140'} height={'140'} src={'/assets/icon (1).png'} alt={""} ></Image>
+          </div>
+          <div>
+          <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
+            Agenda Homologada
+          </h1>
+
+          <Text className="ml-[3rem]" >
+          Sincronizada con tu correo de google calendar, evita duplicar eventos y validar disponibilidad
+          </Text>
+          </div>
+        </CardBody>
+      </Card>
+
+      <Card >
+        
+        <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
+
+        <div >
+          <Image  width={'140'} height={'140'} src={'/assets/icon (2).png'} alt={""} ></Image>
+          </div>
+          <div>
+          <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
+          Atención médica en línea
+          </h1>
+
+          <Text className="ml-[3rem]" >
+          Conecta con pacientes a traves de telemedicina y mantiene la información protegida
+          </Text>
+          </div>
+        </CardBody>
+      </Card>
+
+      <Card >
+        
+        <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
+
+        <div >
+          <Image  width={'140'} height={'140'} src={'/assets/icon (3).png'} alt={""} ></Image>
+          </div>
+          <div>
+          <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
+          Recetas digitales
+          </h1>
+
+          <Text className="ml-[3rem]" >
+          Crea recetas digitales y homologa tus sistemas para médicos y pacientes de manera más eficiente.
+          </Text>
+          </div>
+        </CardBody>
+      </Card>
+
+      <Card >
+        
+        <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
+
+        <div >
+          <Image  width={'140'} height={'140'} src={'/assets/icon (4).png'} alt={""} ></Image>
+          </div>
+          <div>
+          <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
+          Modulo de atención virtual
+          </h1>
+
+          <Text className="ml-[3rem]" >
+          Ofrece un módulo con equipamiento médico para tus colaboradores y conecta con médicos por medio de telemedicina
+          </Text>
+          </div>
+        </CardBody>
+      </Card>
+
+      <Card >
+        
+        <CardBody style={{'padding':'0!important'}} className="w-[100%] flex items-center ">
+
+        <div >
+          <Image  width={'140'} height={'140'} src={'/assets/icon (5).png'} alt={""} ></Image>
+          </div>
+          <div>
+          <h1 style={{'padding':'0!important'}} className="poppins-bold text-[20px] pb-0 ml-[3rem] mb-[1rem]">
+          Financiamiento
+          </h1>
+
+          <Text className="ml-[3rem]" >
+          Ofrece financiamientos a tus pacientes de hasta $100,000 pesos para estudios, consultas y procedimientos
+          </Text>
+          </div>
+        </CardBody>
+      </Card>
+
+
+
+            </div>
+            <Button
+            className="poppins-regular my-[42px] text-sm p-[1rem] w-[10rem]"
+            h="50px"
+            size="sm"
+            color={"white"}
+            bg={"#02045C"}
+            variant="solid"
+          >
+            Conoce más
+          </Button>
           </div>
         </section>
       </div>
