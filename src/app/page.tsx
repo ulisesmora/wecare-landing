@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "../../public/assets/Frame 8148.png";
 import circle from "../../public/assets/Circulo azul.png";
-import circleverde from "../../public/assets/CirculoVerde.png";
+import circleverde from "../../public/assets/Circuloverde.png";
 import gradient from "../../public/assets/Ellipse 1406.png";
 import mainImage from "../../public/assets/32.png";
 import secondImage from "../../public/assets/Group 1026.png";

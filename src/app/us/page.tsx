@@ -1,12 +1,12 @@
 import Image from "next/image";
 import logo from "../../../public/assets/Frame 8148.png";
 import circle from "../../../public/assets/Circulo azul.png";
-import circleverde from "../../../public/assets/CirculoVerde.png";
+import circleverde from "../../../public/assets/Circuloverde.png";
 import gradient from "../../../public/assets/gradient-green.png";
 import mainImage from "../../../public/assets/happy-mother.png";
 import firstImage from "../../../public/assets/first-image.png";
 import secondImage from "../../../public/assets/urgencias.png";
-import profile from "../../../public/assets/Perfil del médico 1.png";
+import profile from "../../../public/assets/profile.png";
 import { Button, Card, CardBody, Text, CardHeader } from "@chakra-ui/react";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendar } from "react-icons/io5";
