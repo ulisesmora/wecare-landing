@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../../public/assets/Frame 8148.png";
+import logo from "../../../public/assets/LogoWecare.png";
 import circle from "../../../public/assets/Circulo azul.png";
 import circleverde from "../../../public/assets/Circuloverde.png";
 import gradient from "../../../public/assets/gradient-green.png";
@@ -102,14 +102,14 @@ export default function Us() {
           </div>
         </section>
 
-        <section className="flex flex-col w-screen relative items-center content-center  mb-[2rem]">
-          <div className="w-[95%] relative z-20   md:w-[90%] grid grid-cols-1  md:grid-cols-3 gap-8 ">
-            <Card>
+        <section className="flex flex-col w-screen relative items-center content-center z-20  mb-[2rem]">
+          <div className="w-[95%] relative z-20  md:w-[90%] grid grid-cols-1  md:grid-cols-3 gap-8 ">
+            <Card className="relative z-20">
               <CardBody
                 style={{ padding: "0!important" }}
-                className="w-[100%] flex  flex-col "
+                className="w-[100%] flex  flex-col z-20"
               >
-                <div>
+                <div className="relative z-20">
                   <Image
                     width={"80"}
                     height={"80"}
@@ -192,13 +192,13 @@ export default function Us() {
             </Card>
           </div>
         </section>
-        <section className="flex flex-col relative w-screen items-center content-center z-20 mb-[2rem]">
+        <section className="flex flex-col relative w-screen items-center content-center  mb-[2rem]">
           <Image
             className="hidden md:block absolute top-[-35rem] left-[-5rem] z-1 h-[90vh]  md:h-auto  " style={{opacity: 0.3}}
             src={circleverde}
             alt={""}
           ></Image>
-          <div className="w-[90%]  flex flex-col md:flex-row space-between content-between items-center  my-[2rem]">
+          <div className="w-[90%]  flex flex-col md:flex-row space-between content-between items-center z-20  my-[2rem]">
             <div className="flex-1 flex justify-center items-center">
               <Image
                 className="md:w-[70%] h-[50%]"

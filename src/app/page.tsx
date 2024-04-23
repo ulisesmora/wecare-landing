@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/assets/Frame 8148.png";
+import logo from "../../public/assets/LogoWecare.png";
 import circle from "../../public/assets/Circulo azul.png";
 import circleverde from "../../public/assets/Circuloverde.png";
 import gradient from "../../public/assets/Ellipse 1406.png";
@@ -87,12 +87,15 @@ export default function Home() {
             className="poppins-regular my-[42px] text-sm p-[1rem] "
             h="50px"
             size="sm"
+            
             color={"white"}
             leftIcon={<IoCalendar />}
             bg={"#02045C"}
             variant="solid"
           >
+            <Link href={'/contact'} >
             Agenda una demo
+            </Link>
           </Button>
         </section>
         <section className="flex flex-col w-screen relative items-center content-center z-20 mb-[2rem]">
@@ -333,6 +336,7 @@ export default function Home() {
 
 
             </div>
+            {/*
             <Button
             className="poppins-regular my-[42px] text-sm p-[1rem] w-[10rem]"
             h="50px"
@@ -343,6 +347,7 @@ export default function Home() {
           >
             Conoce más
           </Button>
+           */}
           </div>
         </section>
       </div>
