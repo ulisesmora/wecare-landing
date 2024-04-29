@@ -9,6 +9,7 @@ import { Button, Card, CardBody, Text, CardHeader } from "@chakra-ui/react";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendar } from "react-icons/io5";
 import Link from 'next/link';
+import  MenuMobile  from "@/components/MenuMobile";
 
 export default function Home() {
   return (
@@ -21,11 +22,15 @@ export default function Home() {
             alt={""}
           ></Image>
         </div>
+        <div className="lg:hidden sx:flex flex items-center flex-row  z-20 sm:flex ">
+          <MenuMobile></MenuMobile>
+        </div>
         <div className="flex items-center flex-row  z-20 hidden lg:flex">
-          
+         {/* 
           <h3 className="poppins-semibold text-sm text-white mr-[42px]">
             Asistente inteligente
           </h3>
+           */}
           <h3 className="poppins-semibold text-sm text-white mr-[42px]">
           <Link href="/us">
             Conocenos
